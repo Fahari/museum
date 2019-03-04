@@ -1,11 +1,13 @@
 from django.shortcuts import render,redirect
 from django.http  import HttpResponse,Http404
 import datetime as dt
+from .models import Photo,Category,Location
 
 # Create your views here.
 def photos_today(request):
     date = dt.date.today()
-    return render(request, 'all-art/today-photos.html', {"date": date,})
+    photos=Photo.objects.all()
+    return render(request, 'all-art/today-photos.html', {"photos": photos})
 
 def past_days_photos(request,past_date):
     try:

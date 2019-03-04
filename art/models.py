@@ -28,7 +28,6 @@ class Photo(models.Model):
     category = models.ForeignKey(Category)
     location = models.ForeignKey(Location)
     photo = models.ImageField(upload_to = 'photos/')
-    def __str__(self):
-        return self.photo_name
+
     def save_image(self):
         self.save()
