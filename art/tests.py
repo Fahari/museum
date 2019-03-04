@@ -11,7 +11,11 @@ class CategoryTestClass(TestCase):
         self.cat.save_category()
         categories=Category.objects.all()
         self.assertTrue(len(categories)>0)
-
+    def test_delete_category(self):
+        self.cat.save_category()
+        self.cat.delete_category()
+        categories=Category.objects.all()
+        self.assertTrue(len(categories)==0)
 
 class LocationTestClass(TestCase):
     def setUp(self):
@@ -23,7 +27,11 @@ class LocationTestClass(TestCase):
         self.loc.save_location()
         locations = Location.objects.all()
         self.assertTrue(len(locations) > 0)
-
+    def test_delete_location(self):
+        self.loc.save_location()
+        self.loc.delete_location()
+        locations=Location.objects.all()
+        self.assertTrue(len(locations)==0)
 
 class PhotoTestClass(TestCase):
     def setUp(self):
@@ -41,3 +49,7 @@ class PhotoTestClass(TestCase):
         self.image.save_image()
         images = Photo.objects.all()
         self.assertTrue(len(images) > 0)
+    def tearDown(self):
+        Location.objects.all().delete()
+        Category.objects.all().delete()
+        Photo.objects.all().delete()
