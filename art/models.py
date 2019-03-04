@@ -27,7 +27,8 @@ class Photo(models.Model):
     pub_date = models.DateTimeField(auto_now_add=True)
     category = models.ForeignKey(Category)
     location = models.ForeignKey(Location)
+    photo = models.ImageField(upload_to = 'photos/')
     def __str__(self):
-        return self.name
+        return self.photo_name
     def save_image(self):
         self.save()
