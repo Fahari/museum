@@ -6,15 +6,23 @@ class Category(models.Model):
 
     def __str__(self):
         return self.name
+    def save_category(self):
+        self.save()
 
 class Location(models.Model):
     name = models.CharField(max_length =30)
 
     def __str__(self):
         return self.name
-
+    def save_location(self):
+        self.save()
 
 class Photo(models.Model):
     photo_name = models.CharField(max_length =30)
     description = models.TextField(max_length =120)
     pub_date = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.name
+    def save_image(self):
+        self.save()
