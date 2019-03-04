@@ -17,3 +17,4 @@ class Location(models.Model):
 class Photo(models.Model):
     photo_name = models.CharField(max_length =30)
     description = models.TextField(max_length =120)
+    pub_date = models.DateTimeField(auto_now_add=True)
