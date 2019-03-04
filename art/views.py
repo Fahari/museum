@@ -3,10 +3,7 @@ from django.http  import HttpResponse,Http404
 import datetime as dt
 
 # Create your views here.
-def welcome(request):
-    return render(request, 'welcome.html')
-
-def photos_of_day(request):
+def photos_today(request):
     date = dt.date.today()
     return render(request, 'all-art/today-photos.html', {"date": date,})
 
