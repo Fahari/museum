@@ -1,28 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
-<!-- <nav class="navbar navbar-inverse">
+  <!-- <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="{% url 'photosToday' %}">Museum</a>
     </div>
   </div>
 </nav> -->
-<div class="nav">
-  <nav>
-    <div class="logo">
-      Museum
-    </div>
-    <ul>
-      <li>Home</li>
-      <!-- <li>Gallery</li> -->
-    </ul>
-    <div class="col-sm-4 col-md-4 navbar-right">
+  <div class="nav">
+    <nav>
+      <div class="logo">
+        Museum
+      </div>
+      <ul>
+        <li>Home</li>
+        <!-- <li>Gallery</li> -->
+      </ul>
+      <div class="w3-dropdown-hover navbar-right">
+        <!-- <button class="w3-button">Locations</button> -->
+        <div class="w3-dropdown-content w3-bar-block w3-border">
+          {% for location in locations %}
+          <a class="w3-bar-item w3-button" href="{% url 'displayLocation' location.id%}">{{location.name}}</a>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="col-sm-4 col-md-4 navbar-right">
 
         <form class="navbar-form" role="search" action="{% url 'search_category' %}">
 
@@ -35,7 +45,8 @@
 
         </form>
       </div>
-  </nav>
-</div>
+    </nav>
+  </div>
 </body>
+
 </html>
