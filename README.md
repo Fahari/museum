@@ -4,7 +4,7 @@
 
 ## Description
 
-Museum is a personal gallery application that I display my photos for others to see. It has a simple design where a user gets to see all my photos in my homepage. I have included a search field where one can search all photos in a particular category of photos. Say my photo gallery contains pictures of black models, one can search for all female black models out of all photos of models. Another cool feature is the ability to click on a photo and get to see a larger image of it with details about it. Oh, and you can get to copy its url if you liked it that much.[:smiley]
+Museum is a personal gallery application that I display my photos for others to see. It has a simple design where a user gets to see all my photos in my homepage. I have included a search field where one can search all photos in a particular category of photos. Say my photo gallery contains pictures of black models, one can search for all female black models out of all photos of models. Another cool feature is the ability to click on a photo and get to see a larger image of it with details about it. Oh, and you can get to copy its url if you liked it that much.:smiley:
 
 ### User Stories
 ```
