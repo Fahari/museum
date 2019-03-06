@@ -52,7 +52,7 @@ ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
 INSTALLED_APPS = [
     'bootstrap3',
-    'art.apps.ArtConfig',
+    'art',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
