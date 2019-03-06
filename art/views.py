@@ -4,6 +4,9 @@ import datetime as dt
 from .models import Photo,Category,Location
 
 # Create your views here.
+def welcome(request):
+    return render(request, 'welcome.html')
+
 def photos_today(request):
     date = dt.date.today()
     photos=Photo.objects.all()

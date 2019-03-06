@@ -1,1 +1,30 @@
-<h1> Welcome to the Moringa Tribune</h1>
+{%extends 'all-art/base1.html'%}
+{% block content %}
+{{block.super}}
+
+    <div class="container">
+      <div class="wrapper">
+
+        <div class="rectangle">
+          <div class="nav">
+            <nav>
+              <div class="logo">
+                Museum
+              </div>
+              <ul>
+                <li><a href="{% url 'photosToday' %}">Gallery</a></li>
+              </ul>
+            </nav>
+          </div>
+
+        </div>
+        <div class="somnia">
+          <p>Obscura's</p>
+          <p>Somnia</p>
+        </div>
+        <div class="noir">
+          <p>La beuté est noir</p>
+        </div>
+      </div>
+    </div>
+{% endblock %}
