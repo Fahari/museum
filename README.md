@@ -12,7 +12,7 @@ Museum is a personal gallery application that I display my photos for others to 
 2. A user can click on a single photo to expand it and also view the details of the photo.
 3. A user can search for different categories of photos. (ie. Travel, Food)
 4. A user can copy a link to the photo to share with my friends.
-5. As a user can view photos based on the location they were taken.
+5. A user can view photos based on the location they were taken.
 ```
 
 ## Technologies Used
