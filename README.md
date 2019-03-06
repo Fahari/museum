@@ -15,9 +15,9 @@ Museum is a personal gallery application that I display my photos for others to 
 5. A user can view photos based on the location they were taken.
 ```
 ## Preview
-A sneak view of the landing page.
+**A sneak view of the landing page.**
 ![Image](https://github.com/Fahari/museum/blob/master/images/somnia.png)
-And some more of the home page.
+**And some more of the home page.**
 ![Image](https://github.com/Fahari/museum/blob/master/images/model.png)
 ## Technologies Used
 ```
