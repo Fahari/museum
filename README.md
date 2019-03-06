@@ -14,7 +14,11 @@ Museum is a personal gallery application that I display my photos for others to 
 4. A user can copy a link to the photo to share with my friends.
 5. A user can view photos based on the location they were taken.
 ```
-
+## Preview
+A sneak view of the landing page.
+![Image](https://github.com/Fahari/museum/blob/master/images/somnia.png)
+And some more of the home page.
+![Image](https://github.com/Fahari/museum/blob/master/images/model.png)
 ## Technologies Used
 ```
 1. Python 3.6
@@ -24,7 +28,7 @@ Museum is a personal gallery application that I display my photos for others to 
 5. Heroku for deployment
 ```
 ## Application link
-click [here](https://#.herokuapp.com/)
+click [here](https://artsyme.herokuapp.com/)
 
 ## Set up and Installation
 
@@ -55,5 +59,5 @@ No known bugs as at the completion of the project.
 Feel free to reach me at karonjekevin67@gmail.com
 
 ### License
-The project is under the [MIT](https://github.com/Fahari/Museum/blob/master/LICENSE) licence
+The project is under the [MIT](https://github.com/Fahari/museum/blob/master/LICENSE) licence
 Copyright (c) 2019 **Kironji Kevin**
